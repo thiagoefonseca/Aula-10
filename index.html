@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aula10</title>
+</head>
+<body>
+<div class="cadastro">  
+    <h1>Formulário de Cadastro</h1>
+    <img class="logo" src="img/image-removebg-preview.png" height="350" width="250">
+    <br> <br>
+    <form action="">
+        <!--label for identifica o id do input
+        name -> utilizado para associar com o js
+        placeholder -> exibe a informação a ser digitada
+        maxlength -> tamanho da caixa do input
+        autofocus required -> o cursor será posicionado no inicio do input-->
+
+
+
+
+
+        <label for="Usuario">Nome: </label>
+        <input type="text" id="Usuario" name="iusuario" placeholder="Digite o seu usuario"
+               maxlength="30" autofocus required>
+        <br> <br>
+        <label for="ldtnasc"> Data de Nascimento  </label>
+        <input type="date" name="idtnasc" 
+               id="ldentifica" min="1950-01-01" max="2008-01-01">
+       
+        <label for="lidade">Idade:</label>
+        <input type="number" name="nidade" id="lidade"
+               min="18" max="22">
+        <label for="lMaior">Maior de Idade: </label>
+        <input type="checkbox" name="iMaior" id="iMaior">
+        <br> <br>
+        <label for="lSexo">Sexo</label>
+        <input type="radio" name="iSexo" id="SexoF" value="F" checked>Feminino
+        <input type="radio" name="iSexo" id="SexoM" value="M" checked>Masculino
+        <br><br>
+
+        <label for="lhorarioentrevista">Horário da Entrevista: </label>
+        <input type="time" name="nhorarioentrevista" 
+               id="ihorarioentrevista">
+        <br><br>
+
+            <label for="isitepessoal"> Site Pessoal</label>
+            <input type="url" name="iSitePessoal" id="lsitepessoal"
+                   value="https://alistamento.eb.mil.br/">
+            <br><br>
+
+            <label for="lTelefone">Telefone:</label>
+            <input type="Tel" name="itelefone" id="ltelefone"
+                   placeholder="00 00000-0000" 
+                   pattern="[0-9]{2} [0-9]{5}-[0-9]{4}">
+            <br><br>
+
+            <label for="lTempoExp">Tempo de Experiência</label>
+            <input list="listaExperiencia">
+                <datalist id="listaExperiencia">
+                    <option value="Menos de um ano">Recruta</option>
+                    <option value="Entre 2 e 5 anos">Soldado</option>
+                    <option value="Mais de 5 anos">Cabo</option>
+                    
+                </datalist>
+            <br><br>
+            <label for="lDataHorarioEntrevista">Data/Horário Entrevista:</label>
+            <input type="datetime-local" name="nDataHorarioEntrevista"
+                   id="lDataHorarioEntrevista">
+            <br><br>
+            <label for="lEmail">E-Mail: </label>
+            <input type="email" name="nEmail" id="lEmail">
+            <br><br>
+            <label for="lUltimoEmprego">Data do último emprego: </label>
+            <input type="month" name="nUltimoEmprego"
+                   id="lUltimoEmprego">
+            <br><br>
+
+             <label for="lConhecimento">Conhecimento em informática</label>   
+             <select name="iConhecimento" id="lConhecimento"
+                    size="4" multiple>   
+                <option value="win"> Windows </option>
+                <option value="word"> Word </option>
+                <option value="excel"> Excel </option>
+                <option value="html"> HTML</option>
+             </select>
+             <br> <br>
+             <label for="lArquivo"> Arquivo</label>
+             <input type="file" name="nArquivo" id="lArquivo"
+             accept=".docx" >
+             <br> <br>  
+             
+            <label for="1Cor"> Selecione uma cor</label>
+             <input type="color" name="iCor" id="lCor">
+             <br><br>
+             
+             <label for="lSenha"> Digite a senha </label>
+             <input type="password" name="iSenha" id="lSenha">
+             <br> <br>
+
+             <input type="reset" value="Limpar">
+            <input type="submit" value="enviar">
+            <br><br>
+        </form>
+
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
